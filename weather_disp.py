@@ -22,7 +22,7 @@ def update_all():
 
 update_all()
 
-schedule.every().hour.do(update_all)
+schedule.every().day.at.("11:00").do(update_all)
 
 while True:
         sphd.show()
